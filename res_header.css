@@ -2,7 +2,7 @@
 /*responsive code*/
 /*max screen size 992px*/
 @media only screen and  (max-width: 992px) {
-    header {height: 46px;}
+    header {height: 46px;width:100%;}
     div#container {width: 840px;height: 44px;}
     div#icon {
        width: 210px;
@@ -23,7 +23,7 @@
 }
 /*max screen size 768px*/
 @media only screen and  (max-width: 768px) {
-   header {height: 38px;}
+   header {height: 38px;width:100%;}
    div#container {width: 640px;height: 40px;}
    div#icon {
        width: 170px;
@@ -49,7 +49,7 @@
 }
 /*max screen size 576px*/
 @media only screen and  (max-width: 576px){
-   header {height: 28px;}
+   header {height: 28px;width:100%;}
    div#container {width: 490px;height: 30px;}
    div#icon i:hover,div#icon i:active {transform: translate(4px);}
    div#icon {
@@ -90,7 +90,7 @@
 }
 /*max screen size 480px*/
 @media only screen and  (max-width: 480px){
-   div#container{width: 460px;}
+   div#container{width: 460px;width:100%;}
    div#icon {width: 115px;}
    div#email {left: 55px;}
    .ser {width: 30%;height: 30px;}
