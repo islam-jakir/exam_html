@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;font-family: 'Squada One';}
+html,body{margin: 0;height: 100%;}
+
+header {
+    width: 100%;
+    height: 40px;
+    background: pink;
+}
+div#container {
+    width: 1140px;
+    margin: auto;
+    padding: 6px;
+}
+div#icon {
+    width: 260px;
+    height: 35px;
+    float: left;
+    font-size: 26px;
+    text-align: left;
+    word-spacing: 34px;
+    color: saddlebrown;
+}
+div#icon i:hover {
+    transition: .4s;
+    transform: translate(7px);
+    color: black;
+    text-decoration: underline;
+}
+div#pro-icon {
+    width: 35px;
+    padding: -10px;
+    height: 35px;
+    float: right;
+    transition: .7s;
+    border-radius: 40px;
+    background: black;
+    overflow: hidden;
+    margin-top: -4px;
+}
+#pro-icon:hover img {
+    filter: brightness(0.5);
+    border-radius: 35px;
+    transition: .4s;
+}
+#pro-icon img{
+    transition: .4s;
+    border-radius: 50px;
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+}
+div#phone {
+    font-size: 21px;
+    width: 310px;
+    height: 35px;
+    float: left;
+}
+div#email {
+    font-size: 21px;
+    width: 440px;
+    height: 35px;
+    float: left;
+}
+div#phone:hover i,#email:hover i{
+    color: saddlebrown;
+    transition: .4s;
+}
+i{transition: .4s;}
+#phone a,#email a{transition: .4s;}
+#phone:hover a,#email:hover a{letter-spacing: 2px;transition: .4s; text-decoration: underline;}
+.ser {
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    margin-left: 100px;
+    overflow: hidden;
+    position: absolute;
+    display: none;
+}
+input#abcSrc {
+    font-family: system-ui;
+    font-weight: 700;
+    font-size: .9375rem;
+    width: 88%;
+    height: 33px;
+    padding: 7px;
+    border: 2px solid;
+    border-radius: 30px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, #333 50%, transparent 50%);
+    display: inline-block;
+    transition: .2s;
+    text-align: center;
+}
+input#abcSrc:hover {
+    background-position: 0% 100%;
+    color: white;
+}
+input#abcSrc:active {
+    border-radius: 30px;
+}
+
+
+
+/*message body*/
+section {
+    width: 100%;
+    height: 93%;
+    overflow: hidden;
+}
+div#msg_container {
+    width: 1140px;
+    height: 100%;
+    margin: auto;
+    padding: 4px;
+}
+div#msg_border {
+    width: 1100px;
+    height: 100%;
+    margin: auto;
+    border-radius: 6px;
+    border: 2px solid greenyellow;
+}
+div#msg_header {
+    width: 100%;
+    height: 58px;
+    background: black;
+    color: wheat;
+    border-radius: 6px;
+    overflow: hidden;
+}
+div#top_img {
+    width: 7%;
+    text-align: center;
+    float: left;
+}
+div#top_img img {
+    border-radius: 60px;
+    float: left;
+    cursor: none;
+    object-fit: cover;
+    border: 2px solid yellow;
+}
+div#exit {
+    font-size: 24px;
+    width: 5%;
+    height: 60px;
+    float: left;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+div#top_name {
+    width: 50%;
+    float: left;
+    height: 60px;
+    padding: 11px 0px;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: arial black;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+}
+div#top_name a {
+    color: wheat;
+    text-decoration: none;
+    transition: .2s ease-in 0s;
+}
+div#top_name a:hover,div#top_name a:active{text-decoration: underline;}
+div#msg_body {
+    width: 99%;
+    height: 80%;
+    margin: auto;
+    background: gainsboro;
+    overflow-y: auto;
+    padding: 0px 6px 6px 1px;
+}
+.msg_sec {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    text-align: right;
+    overflow: hidden;
+}
+.rev_msg {/*this is recv msg*/
+    width: fit-content;
+    max-width: 300px;
+    background: linear-gradient(to top, gray,yellow,khaki);
+    height: auto;
+    margin-top: 3px;
+    margin-left: 5px;
+    padding: 7px;
+    border-radius: 0px 22px 22px 22px;
+    box-shadow: 1px 1px 3px black;
+    overflow-wrap: break-word;
+    font-size: .9375rem;
+    font-weight: 500;
+    font-family: system-ui;
+    float: left;
+    text-align: center;
+}
+.send_msg {
+    width: fit-content;
+    max-width: 300px;
+    background: linear-gradient(to top, #5bad48,#ce2139,#00ff42);
+    height: auto;
+    margin-top: 3px;
+    margin-left: 5px;
+    padding: 7px;
+    border-radius: 22px 22px 0px 22px;
+    box-shadow: 1px 1px 3px black;
+    overflow-wrap: break-word;
+    font-size: .9375rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: white;
+    float: right;
+    text-align: center;
+}
+div#msg_footer {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, #333,#333,#222);
+    padding: 6px;
+    overflow: hidden;
+    border-radius: 0px 0px 6px 6px;
+}
+form {
+    width: 99%;
+    margin: auto;
+}
+textarea {
+    width: 90%;
+    height: auto;
+    resize: none;
+    padding: 3px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: .9375rem;
+    border-radius: 6px 0px 0px 6px;
+    float: left;
+    border-right: none;
+    border: 1px solid deeppink;
+    margin-left: 25px;
+    font-weight: 700;
+    overflow: hidden;
+}
+textarea:focus, input:focus{outline: 0;}
+*:focus {outline: 0;}
+button#snd_btn {
+    font-size: 22px;
+    width: 6%;
+    height: 42px;
+    border-left: none;
+    border: 1px solid deeppink;
+    border-radius: 0px 6px 6px 0px;
+    transition: .1s;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, blue 50%,transparent 50%);
+    display: inline-block;
+    position: relative;
+    right: 25px;
+}
+button#snd_btn i {transition: .1s;transition-timing-function: ease-in;}
+button#snd_btn:hover,button#snd_btn:active{
+    background-position: 0% 100%;
+    color: white;
+    transform: translate(8px);
+}
+button#snd_btn:hover i,button#snd_btn:active i{transform: rotate(45deg);}
+i#seen {
+    float: right;
+    position: relative;
+    bottom: 29px;
+    right: 8px;
+    font-size: 22px;
+    color: yellow;
+}
+.dlt_msg {
+    color: black;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    padding: 4px;
+    float: right;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 20px 20px 0px 20px;
+    background: red;
+}
+label {
+    float: right;
+    background: white;
+    padding: 0px 10px;
+    color: black;
+    border-radius: 6px;
+    font-family: monospace;
+}
+.left {
+    float: left;
+    background: white;
+    padding: 0px 10px;
+    color: black;
+    border-radius: 6px;
+    font-family: monospace;
+}
+

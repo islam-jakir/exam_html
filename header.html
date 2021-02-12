@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="icon/css/all.min.css" rel="stylesheet" type="text/css"><!-- this is fontawesome file-->
+    <link href="icon/css/fontawesome.min.css" rel="stylesheet" type="text/css"><!-- this is fontawesome file-->
+    <script src="jquery.js" type="text/javascript"></script>
+    <link href="header.css" rel="stylesheet" type="text/css"><!-- this is design file-->
+    <link href="res_header.css" rel="stylesheet" type="text/css"><!-- this is responsive file-->
+    <title>Message</title>
+</head>
+<body>
+
+<header>
+    <div id="container">
+        <div id="icon">
+            <i onclick="goBack();" style="cursor: pointer;" class="fa fa-arrow-left"></i>
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a href="#" id="abcSh"><i class="fas fa-search"></i></a>
+        </div>
+        <div id="email">
+            <a title="madeLife Messanger" href="#"><i class="fa fa-sms"></i> <span>Message</span></a>
+        </div>
+        <div id="phone">
+        <i style="color:green" class="fa fa-circle"></i> <a title="This feature adding soon...!" href="#">Active now</a>
+        </div>
+        <div id="pro-icon">
+             <a href="#"><img src="#" title="Edit & Sign Out" style="cursor: pointer;" id="info" width="40px" height="40px"></a>
+        </div>
+    </div>
+</header>
+<div class="ser" id="abcGet">
+    <form id="head_form" method="POST" action="#"><input id="abcSrc" type="search" name="sort" placeholder="Search user name..." required/></form>
+</div>
+<section>
+    <div id="msg_container">
+        <div id="msg_border">
+            <div id="msg_header">
+                <div id="exit"><i id="close" class="fa fa-arrow-left"></i></div>
+                <div id="top_img"><img src="#" width="55px" height="55px"></div>
+                <div id="top_name"><a titile="md sajid islam`s Profile" href="#">md sajid islam</a></div>
+            </div>
+            <div id="msg_body">
+                                <div class="msg_sec">
+                    <div class="rev_msg">
+                        {div#msg_container {width: 1110px;}} /*max screen size 1100px*/ @media only screen and (max-width: 1100px) { .ser{width: 300px;} div#container {width: 940px;height: 40px;} div#icon {width: 240px;height: 40px;} div#phone {height: 40px;} div#email {width: 150px;height: 40px;} /*msg body code*/ div#msg_container {width: 1000p                    </div>
+                </div><label class="left">Thursday,01:16:14 AM</label>
+                                                <div class="msg_sec">
+                    <div class="send_msg">
+                        who r you                    </div>
+                    <div class="dlt_msg"><a title="Delete this message" id="dele" data-dlt="ml15422585040msgCode6021944236"><i class="fas fa-trash-alt"></i></a></div>
+                </div><label>Tuesday,05:02:22 PM</label>
+                                <div class="msg_sec">
+                    <div class="send_msg">
+                        @media only screen and  (max-width: 1120px) {div#msg_container {width: 1110px;}}
+
+/*max screen size 1100px*/
+@media only screen and  (max-width: 1100px) {
+    .ser{width: 300px;}
+    div#container {width: 940px;height: 40px;}
+    div#icon {width: 240px;height: 40px;}
+    div#phone {height: 40px;}
+    div#email {width: 150px;height: 40px;}
+
+    /*msg body code*/
+    div#msg_container {width: 1000px;}
+    div#msg_border {width: 1000px;}
+                        </div>
+                    <div class="dlt_msg"><a title="Delete this message" id="dele" data-dlt="ml73709085640msgCode94269725396"><i class="fas fa-trash-alt"></i></a></div>
+                </div><label>Thursday,01:14:35 AM</label>
+                                <div class="send_msg" id="sender"></div>
+            </div>
+            <div id="msg_footer">
+                <form id="for">
+                    <textarea placeholder="Type a messege..." id="msg" name="msg" maxlength="3000"></textarea>
+                    <button type="submit" id="snd_btn"><i class="fas fa-location-arrow"></i></button>
+                </form>
+                <div id="idn">
+                                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+$(document).ready(function(){
+    $("#snd_btn").on("click",function(){
+
+
+        var txt_msg = $("#msg").val();
+        $("#sender").html(txt_msg);
+        //$("#msg").val('');
+    });
+})
+
+//message body auto scroll script
+const messages = document.getElementById('msg_body');
+
+function appendMessage() {
+	const message = document.getElementsByClassName('msg_body')[0];
+  const newMessage = message.cloneNode(true);
+  messages.appendChild(newMessage);
+}
+
+function getMessages() {
+	// Prior to getting your messages.
+  shouldScroll = msg_body.scrollTop + msg_body.clientHeight === msg_body.scrollHeight;
+  /*
+   * Get your messages, we'll just simulate it by appending a new one syncronously.
+   */
+  appendMessage();
+  // After getting your messages.
+  if (!shouldScroll) {
+    scrollToBottom();
+  }
+}
+
+function scrollToBottom() {
+  messages.scrollTop = msg_body.scrollHeight;
+}
+
+scrollToBottom();
+</script>
+</body>
+</html>
