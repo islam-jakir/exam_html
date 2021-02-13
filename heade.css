@@ -255,7 +255,7 @@ div#delete {
 p {
     line-height: 24px;
     margin: auto;
-    text-align: center;
+    text-align: left;
 }
 p#second {cursor: not-allowed;}
 p#first {
