@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="icon/css/all.min.css" rel="stylesheet" type="text/css"><!-- this is fontawesome file-->
+    <link href="icon/css/fontawesome.min.css" rel="stylesheet" type="text/css"><!-- this is fontawesome file-->
+    <script src="design/jquery.js" type="text/javascript"></script>
+    <link href="design/setting.css" rel="stylesheet" type="text/css"><!-- this is design file-->
+    <script src="design/settings.js" type="text/javascript"></script>
+    <link href="res_design/res_setting.css" rel="stylesheet" type="text/css"><!-- this is responsive file-->
+    
+    <title>Settings</title>
+
+</head>
+<body>
+<section>
+    <div class="container">
+        <div id="bar"><i class="fas fa-bars"></i></div>
+        <div class="side_bar">
+            <div id="side_hide"><i class="fas fa-times"></i></div>
+            <div id="gen" class="side_item"><i class="fa fa-cog"></i> General</div>
+            <div id="sec" class="side_item"><i class="fas fa-shield-alt"></i> Security</div>
+            <div id="lock" class="side_item"><i class="fa fa-lock"></i> Privacy</div>
+            <div id="ban" class="side_item"><i class="fas fa-ban"></i> Deactivation and deletion</div>
+        </div>
+        <div class="contant_box">
+            <div id="optnl">
+                <div class="side_sugg">
+                    <div class="sugg"></div>
+                    <div class="sugg"></div>
+                    <div class="sugg"></div>
+                    <div class="sugg"></div>
+                    <i class="far fa-hand-pointer"></i>
+                </div>
+                <b>click side bar for open your current settings...!</b>
+            </div>
+
+            <div id="gen_show" class="general"><!--general settings-->
+                <ul>
+                    <li>
+                        <label>account settings</label><hr/>
+                    </li>
+                    <li>
+                        <label>name:</label><p style="text-transform: capitalize;">muhammad islam jakir</p>
+                        <form id="nam">
+                            <input type="text" id="fnam" placeholder="First name" minlength="2" maxlength="15" required/>
+                            <input type="text" id="lnam" placeholder="Last name" minlength="2" maxlength="15" required/>
+                            <input type="submit" id="name" value="update"/>
+                        </form>
+                        <a href="#" id="nam_shw"><i class="fa fa-pen"></i> Edit</a><hr/>
+                    </li>
+                    <li>
+                        <label>email:</label><p><em><b>primary: </b></em>muhammadislamjakir40@gmail.com</p><a href="#"><i class="fa fa-pen"></i> Edit</a><hr/>
+                    </li>
+                    <li>
+                        <label>phone:</label><p>(+880)1000000000</p>
+                        <form id="num">
+                            <input type="number" placeholder="Mobile num..." id="mob" minlength="9" maxlength="15" required/>
+                            <input type="submit" id="mobile" value="change"/>
+                        </form>
+
+                        <a href="#" id="n_shw"><i class="fa fa-pen"></i> Edit</a><hr/>
+                    </li>
+                    <li>
+                        <label>user id:</label><p>@mw974387495739</p><a href="#"><i class="fa fa-pen"></i> Edit</a><hr/>
+                    </li>
+                </ul>
+            </div>
+            <div id="pri_show" class="privacy"><!--privacy settings-->
+                <ul>
+                    <li><label>Privacy Settings</label><hr/></li>
+                    <li><label>email</label><p>who can see your email?</p>
+                            <h4>
+                                <div id="showA"><i class="fa fa-pen"></i> Edit</div>
+                                <div id="hideMe" class="hide">
+                                    <h5>select <i class="fas fa-sort-down"></i><hr/></h5>
+                                    <h5><i class="fas fa-globe-asia"></i> 
+                                        <input type="hidden" value="Public" id="public"/>public</h5>
+                                    <h5><i class="fas fa-user-friends"></i> 
+                                        <input type="hidden" value="Followers" id="flw"/>followers</h5>
+                                    <h5><i class="fa fa-lock"></i> 
+                                        <input type="hidden" value="Only me" id="onlyme"/>only me</h5>
+                                </div>
+                            </h4>
+                        <hr/>
+                    </li>
+                    <li><label>address</label><p>who can see your address?</p>
+                        <h4>
+                            <div id="showB"><i class="fa fa-pen"></i> Edit</div>
+                            <div id="hideB" class="hide">
+                                <h5>select <i class="fas fa-sort-down"></i><hr/></h5>
+                                <h5><i class="fas fa-globe-asia"></i> 
+                                    <input type="hidden" value="Public" id="public"/>public</h5>
+                                <h5><i class="fas fa-user-friends"></i> 
+                                    <input type="hidden" value="Followers" id="flw"/>followers</h5>
+                                <h5><i class="fa fa-lock"></i> 
+                                    <input type="hidden" value="Only me" id="onlyme"/>only me</h5>
+                            </div>
+                        </h4><hr/>
+                    </li>
+                    <li><label>phone</label><p>who can see your contract number?</p>
+                        <h4>
+                            <div id="showC"><i class="fa fa-pen"></i> Edit</div>
+                            <div id="hideC" class="hide">
+                                <h5>select <i class="fas fa-sort-down"></i><hr/></h5>
+                                <h5><i class="fas fa-globe-asia"></i> 
+                                    <input type="hidden" value="Public" id="public"/>public</h5>
+                                <h5><i class="fas fa-user-friends"></i> 
+                                    <input type="hidden" value="Followers" id="flw"/>followers</h5>
+                                <h5><i class="fa fa-lock"></i> 
+                                    <input type="hidden" value="Only me" id="onlyme"/>only me</h5>
+                            </div>
+                        </h4><hr/>
+                    </li>
+                    <li><label>birthday</label><p>who can see your birthday?</p>
+                        <h4>
+                            <div id="showD"><i class="fa fa-pen"></i> Edit</div>
+                            <div id="hideD" class="hide">
+                                <h5>select <i class="fas fa-sort-down"></i><hr/></h5>
+                                <h5><i class="fas fa-globe-asia"></i> 
+                                    <input type="hidden" value="Public" id="public"/>public</h5>
+                                <h5><i class="fas fa-user-friends"></i> 
+                                    <input type="hidden" value="Followers" id="flw"/>followers</h5>
+                                <h5><i class="fa fa-lock"></i> 
+                                    <input type="hidden" value="Only me" id="onlyme"/>only me</h5>
+                            </div>
+                        </h4><hr/>
+                    </li>
+                    <li><label>religion</label><p>who can see your religion?</p>
+                        <h4>
+                            <div id="showE"><i class="fa fa-pen"></i> Edit</div>
+                            <div id="hideE" class="hide">
+                                <h5>select <i class="fas fa-sort-down"></i><hr/></h5>
+                                <h5><i class="fas fa-globe-asia"></i> 
+                                    <input type="hidden" value="Public" id="public"/>public</h5>
+                                <h5><i class="fas fa-user-friends"></i> 
+                                    <input type="hidden" value="Followers" id="flw"/>followers</h5>
+                                <h5><i class="fa fa-lock"></i> 
+                                    <input type="hidden" value="Only me" id="onlyme"/>only me</h5>
+                            </div>
+                        </h4><hr/>
+                    </li>
+                    <li><label>gender</label><p>who can see your gender?</p>
+                        <h4>
+                            <div id="showF"><i class="fa fa-pen"></i> Edit</div>
+                            <div id="hideF" class="hide">
+                                <h5>select <i class="fas fa-sort-down"></i><hr/></h5>
+                                <h5><i class="fas fa-globe-asia"></i> 
+                                    <input type="hidden" value="Public" id="public"/>public</h5>
+                                <h5><i class="fas fa-user-friends"></i> 
+                                    <input type="hidden" value="Followers" id="flw"/>followers</h5>
+                                <h5><i class="fa fa-lock"></i> 
+                                    <input type="hidden" value="Only me" id="onlyme"/>only me</h5>
+                            </div>
+                        </h4><hr/>
+                    </li>
+                </ul>
+            </div>
+            <div id="log"><!--security settings-->
+                <div id="pass_show" class="pass_div">
+                    <label>Signin Security </label>
+                    <div class="text">
+                        <u>password</u><br/>
+                        <span>use a strong password that you don't use elsewhere.</span>
+                        <a title="Set a strong password" href="hm_change_pwd.php">change</a>
+                    </div>
+                    <div id="chng" class="change">
+                        <p>what is my password?</p>
+                        <span id="see">See password</span>
+                        <div id="pwd">
+                            <p class="chckp">If you are the real owner of this ID, you must understand the password</p>
+                            <code>786786786786</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="delete">
+                <div class="dele">
+                    <label>permanently deletion</label><hr/>
+                    <p id="first"><i class="fas fa-ban"></i> delete my account...!</p>
+                    <p id="second"><i class="fas fa-minus-circle"></i> If you delete the ID, all your information will be deleted, and you will never get the information back.<label id="next">i know that!</label></p>
+                    <div id="three">
+                        <p><i class="fas fa-trash-alt"></i> are you sure want to delete your account? <label id="nextB">yes</label> | <label id="nextC">no</label></p>
+                    </div>
+                    <p id="four"><i class="fas fa-eraser"></i> Before deleting the account, delete all the information in the post and message <label id="nextD">yes do it!</label></p>
+                    <p id="five"><i class="far fa-trash-alt"></i> permanently delete your account</p>
+                    <p id="six"><i class="fas fa-exclamation-triangle"></i> confirm deleted</p>
+                    <div id="last"><label>yes</label>  <label id="no">no</label></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
