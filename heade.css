@@ -242,6 +242,7 @@ div#delete {
     color: white;
     font-size: 29px;
 }
+.dele label{font-size: 15px;}
 .dele hr {
     width: 300px;
     height: 3px;
