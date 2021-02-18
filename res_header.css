@@ -1,0 +1,177 @@
+/*responsive code*/
+/*responsive code*/
+/*when screen size max 1200px*/
+@media only screen and  (max-width: 1200px) {.head_sec {width: 1100px;}}
+
+/*when screen size max 1100px*/
+@media only screen and  (max-width: 1100px) {.head_sec {width: 1100px;}}
+
+/*when screen size max 1040px*/
+@media only screen and  (max-width: 1040px) {.head_sec {width: 940px;}}
+
+/*when screen size max 992px*/
+@media only screen and  (max-width: 992px) {
+    .head_sec {width: 900px;}
+    div#icon_box ul li a,div#user_box i {font-size: 26px;}
+    div#user_box p span{display: none;}
+    div#user_box,.me_name{width: 260px;}
+    div#user_box p{font-size: 22px;width: 220px;}
+    .msg_box span{font-size: 22px;}
+    .msg_box {width: 152px;}
+    
+}
+
+/*when screen size max 900px*/
+@media only screen and  (max-width: 900px) {
+    .head_sec {width: 900px;}
+    div#user_box p,.msg_box span{display: none;}
+    div#user_box, .me_name {width: 34px;}
+    .msg_box {width: 38px;}
+    div#last_box {width: 105px;}
+}
+
+/*when screen size max 868px*/
+@media only screen and  (max-width: 868px) {
+    .head_sec {width: 85%;}
+}
+
+/*when screen size max 800px*/
+@media only screen and  (max-width: 800px) {}
+
+/*when screen size max 768px*/
+@media only screen and  (max-width: 768px) {
+    div#user_box{margin-left: 0;}
+    .me_name{background: none;}
+    .pro_icon_box img{display: none;}
+    .pro_icon_box i{opacity: 1;color: black;}
+    .pro_icon_box span {display: block;font-size: 22px;}
+    i.fas.fa-chevron-up {display: none;}
+}
+
+/*when screen size max 720px*/
+@media only screen and  (max-width: 720px) {
+    div#icon_box ul li:nth-child(2) {display: none;}
+    div#icon_box {width: 165px;}
+    form#head_form {width: 250px;}
+    div#abcGet {width: 250px;margin-left: 120px;box-shadow: 0px 0px 15px -2px rgb(32 32 32);}
+    input#abcSrc {width: 214px;}
+    button#abcSrch_btn{width: 40px;}
+}
+
+/*when screen size max 668px*/
+@media only screen and  (max-width: 668px) {}
+
+/*when screen size max 576px*/
+@media only screen and  (max-width: 576px) {}
+
+/*when screen size max 500px*/
+@media only screen and  (max-width: 500px) {}
+/*when screen size max 1140px*/
+@media only screen and  (max-width: 1140px) {}
+
+/*when screen size max 1100px*/
+@media only screen and  (max-width: 1100px) {}
+
+/*when screen size max 960px*/
+@media only screen and  (max-width: 960px) {
+    .name {width: 640px;}
+    .user_name p {font-size: 30px;}
+    .desh {width: 85%;}
+    .desh label {font-size: 13px;}
+    .post_btn {width: 145px;}
+    button#post {box-shadow: 0px 0px 13px -5px rgb(32 32 32 / 85%);}
+    div#about_sec,.about {width: 96%;float: none;}
+    .action_line {width: 98%;margin: auto;}
+    .action_left {margin: auto;width: 99%;}
+    div#container,.action_left,.post_view {width: 99%;}
+    .post_photo{width: 50%;}
+    .righ{float: right;text-align: right;width: 50%;}
+    .pro_up {max-width: 500px;left: 20px;}
+    .secondary_sec,div#container,.post_view,.post_view_container {height: max-content;}
+    .post_view_container{width: 99%;margin: auto;}
+    .post_scl {width: 533px;background: #f0f2f5;margin: auto;position: relative;top: 855px;float: none;}
+    .post_cotainer{float: none;}
+    div#error{margin-left: 200px;}
+    .info_container {
+        margin: auto;
+        position: relative;
+        bottom: 780px;
+        float: none;
+    }
+}
+
+/*when screen size max 900px*/
+@media only screen and  (max-width: 900px) {
+    .cover{height: 300px;}
+    .uploader{margin-top: -165px;}
+    .right{width: 50%;}
+    div#cov_up{bottom: 550px;}
+    .pro_up{bottom: 470px;}
+    .name {
+        width: 70%;
+        margin: auto;
+        float: right;
+        margin-top: 15px;
+    }
+    button#post{font-size: 15px;}
+    .post_photo{width: 56%;}
+    .right{width: 35%;}
+}
+
+/*when screen size max 850px*/
+@media only screen and  (max-width: 860px) {
+    .right a span {display: none;}
+    .right {width: 170px;}
+}
+
+/*when screen size max 800px*/
+@media only screen and  (max-width: 800px) {
+    .post_photo {width: 450px;}
+    div#about_sec {position: relative;top: 35px;}
+    .name {width: 59%;margin-right: 70px;}
+}
+
+/*when screen size max 768px*/
+@media only screen and  (max-width: 768px) {}
+
+/*when screen size max 720px*/
+@media only screen and  (max-width: 720px) {
+    div#cov_up{bottom: 560px;margin-left: 110px;}
+}
+
+/*when screen size max 700px*/
+@media only screen and  (max-width: 700px) {
+    .name{margin-right: 10px;}
+}
+
+/*when screen size max 668px*/
+@media only screen and  (max-width: 668px) {
+    a.action_btn {padding: 6px 12px;margin: auto;font-size: 14px;margin-right: 6px;}
+    .post_photo {width: 320px;}
+    .right {width: 120px;}
+    .name {width: 88%;margin: auto;margin-top: 82px;float: none;}
+    .post_btn {position: relative;bottom: 208px;}
+    .user_name {
+        width: 99%;
+        position: relative;
+        bottom: 73px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/*when screen size max 576px*/
+@media only screen and  (max-width: 576px) {
+    .post_scl,.post_cotainer,.post_box,.post-img,.post_img_main img,.post_action_box,.post_action {width: 98%;}
+    .view_box {width: 140px;}
+    div#error {margin-left: 100px;margin-top: 197px;}
+    .pro_up {max-width: 450px;}
+    .btn_room {width: 260px;}
+    .closeA {width: 35px;height: 35px;margin-right: -28px;}
+    input#pro_up_btn {width: 70px;height: 70px;font-size: 15px;}
+    div#cov_up {bottom: 580px;margin-left: 10px;}
+    div#about_sec {top: -75px;}
+}
+
+/*when screen size max 540px*/
+@media only screen and  (max-width: 540px) {.view_box {width: 30%;}}
